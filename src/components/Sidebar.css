@@ -1,0 +1,63 @@
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 220px;
+    height: 100%;
+    background: linear-gradient(#541f61, #009E49); /* Blue to Green gradient */
+    transition: transform 0.3s ease;
+  }
+  
+  @media (max-width: 768px) {
+    .sidebar {
+      transform: translateX(-250px);
+    }
+  }
+  
+  .sidebar.open {
+    transform: translateX(0);
+  }
+  
+  .sidebar ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .sidebar ul li {
+    padding: 12px;
+  }
+  
+  .sidebar ul li a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    transition: background-color 0.3s; /* Add transition effect */
+  }
+  
+  .sidebar ul li a:hover {
+    background-color: #555; /* Change background color on hover */
+  }
+  
+  .admin-link:hover .sub-list {
+    display: block;
+  }
+  
+  .sub-list {
+    display: none;
+    list-style-type: none;
+    padding-left: 20px; /* Adjust the indentation of sub-list items */
+  }
+  
+  .sub-list li {
+    margin: 5px 0;
+  }
+  
+  .sub-list li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .sub-list li a:hover {
+    color: #ddd;
+  }
+  
